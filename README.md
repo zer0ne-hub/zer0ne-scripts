@@ -10,11 +10,15 @@ I write them on [zerOne](https://dev.nairolf32.com/zerOne) my cybersecurity blog
 
 ## Usage
 
-I could let you figure it yourself but hey... it's quite simple:
+I could let you figure it yourself but hey...
+
+I migrated to [uv](https://docs.astral.sh/uv) which is recommended but you don't have to
+use it
 
 - clone the repo
-- install the requirements (for all the scripts I used `pip install -r requirements.txt`)
-- run the script with `python3 <script_name>.py`
+- uv handles most things alone but you might want to create a `venv`
+- install the requirements from `pyproject.toml`
+- run the desired script with `python3 <script_name>.py`
 - scripts are named after the challenge I am solving
 - scripts are placed in subfolders corresponding to the challenge platform
 - if the script requires multiple files to work (crypto challs much) I add all that in a subfolder
