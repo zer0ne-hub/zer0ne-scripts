@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+# /// script
+# requires-python = ">=3.12"
+# dependencies = [
+#     "requests>=2.34.2",
+# ]
+# ///
 """Solve the equation from the Newbie Contest challenge."""
 
 import requests

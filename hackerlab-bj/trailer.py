@@ -1,9 +1,17 @@
 #!/usr/bin/python3
+# /// script
+# requires-python = ">=3.12"
+# dependencies = [
+#     "numpy>=2.5.3",
+#     "pillow>=12.3.0",
+# ]
+# ///
 """XOR all images in a folder and save the result as a new image."""
 
 import os
-from PIL import Image
+
 import numpy as np
+from PIL import Image
 
 
 def xor_images(image_paths):
@@ -17,8 +25,8 @@ def xor_images(image_paths):
 
 def main():
     """ entry point of the script."""
-    frames_folder = "frames"
-    output_folder = "out"
+    frames_folder = "."
+    output_folder = "."
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
     image_paths = [os.path.join(frames_folder, f) for f in os.listdir(

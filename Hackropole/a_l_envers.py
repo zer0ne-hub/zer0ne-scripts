@@ -1,6 +1,6 @@
 """A l'envers"""
-import socket
 import re
+import socket
 
 HOST = 'localhost'
 PORT = 4000

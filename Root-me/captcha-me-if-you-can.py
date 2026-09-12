@@ -1,12 +1,22 @@
+# /// script
+# requires-python = ">=3.12"
+# dependencies = [
+#     "beautifulsoup4>=4.15.0",
+#     "pillow>=12.3.0",
+#     "pytesseract>=0.3.13",
+#     "requests>=2.34.2",
+# ]
+# ///
 """CAPTCHA ME IF YOU CAN
 Honestly this one was annoying much. You need to make sure to send the PHPSESSID cookie with the request
 Also My preprocessing is not perfect so It takes multiple attempts to get the correct captcha
 """
 import base64
-from io import BytesIO
 import unicodedata
-import requests
+from io import BytesIO
+
 import pytesseract
+import requests
 from bs4 import BeautifulSoup
 from PIL import Image, ImageEnhance
 

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """TCP - Uncompress me"""
-import socket
-import re
 import base64
+import re
+import socket
 import zlib
 
 HOST = "challenge01.root-me.org"

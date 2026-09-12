@@ -1,4 +1,10 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.12"
+# dependencies = [
+#     "pwntools>=4.15.0",
+# ]
+# ///
 """you either know xor you dont"""
 from pwn import xor
 
@@ -8,6 +14,5 @@ decoded = bytes.fromhex(FLAG)
 KEY = xor(decoded, "crypto{".encode())
 # from output we try to guess the key
 KEY = KEY[:7] + KEY[8:9]
-# this is ugly but it works! might refactor later
 print("key: ", KEY.decode())
 print("flag: ", xor(decoded, KEY).decode())

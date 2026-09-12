@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+# /// script
+# requires-python = ">=3.12"
+# dependencies = [
+#     "requests>=2.34.2",
+# ]
+# ///
 import requests  # I feel like using requests today
 
 chall_url = "https://www.newbiecontest.org/epreuves/prog/prog1.php"

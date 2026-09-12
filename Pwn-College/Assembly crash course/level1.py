@@ -1,4 +1,10 @@
 #!/usr/bin/python
+# /// script
+# requires-python = ">=3.12"
+# dependencies = [
+#     "pwntools>=4.15.0",
+# ]
+# ///
 """set a register"""
 import pwn
 pwn.context.update(arch="amd64")

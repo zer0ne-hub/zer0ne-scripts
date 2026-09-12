@@ -1,4 +1,10 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.12"
+# dependencies = [
+#     "pwntools>=4.15.0",
+# ]
+# ///
 """Decode the flag from the racecar challenge."""
 
 from pwn import p32  # [no-member]

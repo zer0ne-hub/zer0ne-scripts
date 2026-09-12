@@ -1,5 +1,13 @@
+# /// script
+# requires-python = ">=3.12"
+# dependencies = [
+#     "numpy>=2.5.3",
+#     "scipy>=1.18.1",
+# ]
+# ///
 """FSK Decoder"""
 import wave
+
 import numpy as np
 from scipy.fftpack import fft
 
@@ -89,6 +97,6 @@ def main(wav_path, baud_rate=100):
 
 
 if __name__ == "__main__":
-    FILE = "fsk_zer0ne/fsk_zer0ne.wav"
+    FILE = "fsk_zer0ne.wav"
     # Baud rate confirmé à 10 après analyse visuelle
     main(FILE, baud_rate=10)

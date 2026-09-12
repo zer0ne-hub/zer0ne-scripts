@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """TCP - Chaîne encodée"""
-import socket
-import re
 import base64
+import re
+import socket
 
 HOST = "challenge01.root-me.org"
 PORT = 52023

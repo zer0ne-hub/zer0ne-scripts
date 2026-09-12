@@ -1,6 +1,13 @@
 #!/usr/bin/python
-from pwn import *
+# /// script
+# requires-python = ">=3.12"
+# dependencies = [
+#     "pwtools>=0.4",
+# ]
+# ///
 import re
+
+from pwn import *
 
 host = "7c77fa5239520456.247ctf.com"
 port = 50325

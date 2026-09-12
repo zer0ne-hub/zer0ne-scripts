@@ -1,6 +1,12 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.12"
+# dependencies = [
+#     "pwntools>=4.15.0",
+# ]
+# ///
 """exploit for the babyHeap challenge on Hackuten"""
-from pwn import ELF, process, p64
+from pwn import ELF, p64, process
 
 elf = ELF('./challenge', checksec=False)
 win = elf.symbols['win']

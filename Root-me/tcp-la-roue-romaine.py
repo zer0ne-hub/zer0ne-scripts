@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """TCP - La roue romaine"""
-import socket
-import re
 import codecs
+import re
+import socket
 
 HOST = "challenge01.root-me.org"
 PORT = 52021

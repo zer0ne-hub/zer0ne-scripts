@@ -1,4 +1,10 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.12"
+# dependencies = [
+#     "pycryptodome>=3.23.0",
+# ]
+# ///
 """bytes and big integers"""
 from Crypto.Util.number import long_to_bytes
 

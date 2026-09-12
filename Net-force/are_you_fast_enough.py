@@ -1,7 +1,14 @@
 #!/usr/bin/python
+# /// script
+# requires-python = ">=3.12"
+# dependencies = [
+#     "requests>=2.34.2",
+# ]
+# ///
 """Gotta go fast"""
 
 import re
+
 import requests
 
 r = requests.get(

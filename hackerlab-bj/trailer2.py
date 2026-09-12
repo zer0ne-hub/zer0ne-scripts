@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Swap every two bytes in a binary file and save the result as a new file."""
 
 def swap_bytes_in_file(input_file, output_file):
     with open(input_file, 'rb') as f:

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """TCP - Retour au collège"""
-import socket
-import re
 import math
+import re
+import socket
 
 HOST = "challenge01.root-me.org"
 PORT = 52002

@@ -1,7 +1,15 @@
-from Crypto.PublicKey import RSA
-from Crypto.Cipher import PKCS1_OAEP
-from Crypto.Util.number import inverse
+# /// script
+# requires-python = ">=3.12"
+# dependencies = [
+#     "pycryptodome>=3.23.0",
+# ]
+# ///
+"""Broadcast RSA attack"""
 from math import gcd
+
+from Crypto.Cipher import PKCS1_OAEP
+from Crypto.PublicKey import RSA
+from Crypto.Util.number import inverse
 
 pub1 = RSA.import_key(open("pub1.pem", "rb").read())
 pub2 = RSA.import_key(open("pub2.pem", "rb").read())

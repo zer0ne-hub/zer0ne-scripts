@@ -1,6 +1,13 @@
 #!/usr/bin/python3
-import requests
+# /// script
+# requires-python = ">=3.12"
+# dependencies = [
+#     "requests>=2.34.2",
+# ]
+# ///
 import math
+
+import requests
 
 chall_url1 = "https://www.newbiecontest.org/epreuves/prog/prog3_1.php"
 chall_url2 = "https://www.newbiecontest.org/epreuves/prog/prog3_2.php"
